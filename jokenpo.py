@@ -11,6 +11,7 @@ option = st.selectbox(
      ('PEDRA', 'PAPEL', 'TESOURA'))
 
 st.write('Você escolheu:', option)
+time.sleep(5)
 st.text('JO')
 time.sleep(1)
 st.text('KEN')
