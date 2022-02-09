@@ -1,6 +1,10 @@
 from random import randint
 import time
 import streamlit as st
+from PIL import Image
+image = Image.open('Jo-Ken-Po.jpg')
+
+st.image(image)
 
 itens = ('PEDRA', 'PAPEL', 'TESOURA')
 pc = randint(0, 2)
