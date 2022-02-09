@@ -17,9 +17,6 @@ st.text('PO!!!')
 time.sleep(1)
 
 if pc == 0:
-     st.text('-=' * 15)
-     st.text('O computador escolheu {}'.format(itens[pc]))
-     st.text('-=' * 15)
     if option == 'PEDRA':
         st.info('EMPATE!')
     elif option == 'PAPEL':
@@ -31,9 +28,6 @@ if pc == 0:
         st.warning('JOGADA INVÁLIDA!')
 
 elif pc == 1:
-     st.text('-=' * 15)
-     st.text('O computador escolheu {}'.format(itens[pc]))
-     st.text('-=' * 15)
     if option == 'PEDRA':
         st.error('COMPUTADOR VENCEU!')
     elif option == 'PAPEL':
@@ -45,9 +39,6 @@ elif pc == 1:
         st.warning('JOGADA INVÁLIDA!')
 
 elif pc == 2:
-     st.text('-=' * 15)
-     st.text('O computador escolheu {}'.format(itens[pc]))
-     st.text('-=' * 15)
     if option == 'PEDRA':
         st.success('VOCÊ VENCEU!')
          st.balloons()
@@ -57,3 +48,7 @@ elif pc == 2:
         st.info('EMPATE')
     else:
         st.warning('JOGADA INVÁLIDA!')
+          
+st.text('-=' * 15)
+     st.text('O computador escolheu {}'.format(itens[pc]))
+     st.text('-=' * 15)
