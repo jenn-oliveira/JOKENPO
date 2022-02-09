@@ -4,11 +4,9 @@ import streamlit as st
 
 itens = ('PEDRA', 'PAPEL', 'TESOURA')
 pc = randint(0, 2)
-st.text('''ESCOLHA:
-[ 0 ] PEDRA
-[ 1 ] PAPEL
-[ 2 ] TESOURA''')
-j1 = st.number_input('Sua escolha: ')
+j1 = st.selectbox ( 
+    "ESCOLHA:"
+    ( '0 - PEDRA', '1 - PAPEL', '2 - TESOURA' ))
 st.spinner('JO')
 time.sleep(1)
 st.spinner('KEN')
