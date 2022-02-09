@@ -41,7 +41,7 @@ elif pc == 1:
 elif pc == 2:
     if option == 'PEDRA':
         st.success('VOCÊ VENCEU!')
-         st.balloons()
+        st.balloons()
     elif option == 'PAPEL':
         st.error('COMPUTADOR VENCEU!')
     elif option == 'TESOURA':
