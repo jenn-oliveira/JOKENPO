@@ -15,10 +15,11 @@ st.text('KEN')
 time.sleep(1)
 st.text('PO!!!')
 time.sleep(1)
-st.text('-=' * 15)
-st.text('O computador escolheu {}'.format(itens[pc]))
-st.text('-=' * 15)
+
 if pc == 0:
+     st.text('-=' * 15)
+     st.text('O computador escolheu {}'.format(itens[pc]))
+     st.text('-=' * 15)
     if option == 'PEDRA':
         st.info('EMPATE!')
     elif option == 'PAPEL':
@@ -30,22 +31,29 @@ if pc == 0:
         st.warning('JOGADA INVÁLIDA!')
 
 elif pc == 1:
-    if j1 == 0:
+     st.text('-=' * 15)
+     st.text('O computador escolheu {}'.format(itens[pc]))
+     st.text('-=' * 15)
+    if option == 'PEDRA':
         st.error('COMPUTADOR VENCEU!')
-    elif j1 == 1:
+    elif option == 'PAPEL':
         st.info('EMPATE')
-    elif j1 == 2:
+    elif option == 'TESOURA':
         st.success('VOCÊ VENCEU!')
         st.balloons()
     else:
         st.warning('JOGADA INVÁLIDA!')
 
 elif pc == 2:
-    if j1 == 0:
+     st.text('-=' * 15)
+     st.text('O computador escolheu {}'.format(itens[pc]))
+     st.text('-=' * 15)
+    if option == 'PEDRA':
         st.success('VOCÊ VENCEU!')
-    elif j1 == 1:
+         st.balloons()
+    elif option == 'PAPEL':
         st.error('COMPUTADOR VENCEU!')
-    elif j1 == 2:
+    elif option == 'TESOURA':
         st.info('EMPATE')
     else:
         st.warning('JOGADA INVÁLIDA!')
