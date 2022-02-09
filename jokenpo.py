@@ -6,7 +6,7 @@ itens = ('PEDRA', 'PAPEL', 'TESOURA')
 pc = randint(0, 2)
 j1 = st.selectbox ( 
     "ESCOLHA:"
-    ( '0 - PEDRA', '1 - PAPEL', '2 - TESOURA' ))
+    ('0 - PEDRA', '1 - PAPEL', '2 - TESOURA'))
 st.write('Você escolheu:{}'.format(itens[j1]))
 st.spinner('JO')
 time.sleep(1)
