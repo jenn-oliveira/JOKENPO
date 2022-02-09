@@ -7,6 +7,7 @@ pc = randint(0, 2)
 j1 = st.selectbox ( 
     "ESCOLHA:"
     ( '0 - PEDRA', '1 - PAPEL', '2 - TESOURA' ))
+st.write('Você escolheu:{}'.format(itens[j1]))
 st.spinner('JO')
 time.sleep(1)
 st.spinner('KEN')
@@ -15,7 +16,6 @@ st.spinner('PO!!!')
 time.sleep(1)
 st.text('-=' * 15)
 st.text('O computador escolheu {}'.format(itens[pc]))
-st.text('Você escolheu {}'.format(itens[j1]))
 st.text('-=' * 15)
 if pc == 0:
     if j1 == 0:
