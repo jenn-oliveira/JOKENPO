@@ -50,5 +50,5 @@ elif pc == 2:
         st.warning('JOGADA INVÁLIDA!')
           
 st.text('-=' * 15)
-     st.text('O computador escolheu {}'.format(itens[pc]))
-     st.text('-=' * 15)
+st.text('O computador escolheu {}'.format(itens[pc]))
+st.text('-=' * 15)
