@@ -4,11 +4,11 @@ import streamlit as st
 
 itens = ('PEDRA', 'PAPEL', 'TESOURA')
 pc = randint(0, 2)
-st.text('''ESCOLHA:
-[ 0 ] PEDRA
-[ 1 ] PAPEL
-[ 2 ] TESOURA''')
-j1 = st.text_input('Sua escolha: ')
+option = st.selectbox(
+     'ESCOLHA:',
+     ('PEDRA', 'PAPEL', 'TESOURA'))
+
+st.write('Você escolheu:', option)
 st.text('JO')
 time.sleep(1)
 st.text('KEN')
