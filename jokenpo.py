@@ -19,12 +19,12 @@ st.text('-=' * 15)
 st.text('O computador escolheu {}'.format(itens[pc]))
 st.text('-=' * 15)
 if pc == 0:
-    if j1 == 0:
+    if option == 'PEDRA':
         st.info('EMPATE!')
-    elif j1 == 1:
+    elif option == 'PAPEL':
         st.success('VOCÊ VENCEU!')
         st.balloons()
-    elif j1 == 2:
+    elif option == 'TESOURA':
         st.error('COMPUTADOR VENCEU!')
     else:
         st.warning('JOGADA INVÁLIDA!')
