@@ -8,7 +8,7 @@ st.text('''ESCOLHA:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
-j1 = st.text_input('Sua escolha: ')
+j1 = st.number_input('Sua escolha: ')
 st.spinner('JO')
 time.sleep(1)
 st.spinner('KEN')
