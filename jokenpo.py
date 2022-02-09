@@ -9,4 +9,4 @@ st.text('''ESCOLHA:
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
 j1 = st.text_input('Sua escolha: ')
-st.text('Você escolheu {}'.format(itens[j1]))
+st.text('Você escolheu ", j1)
