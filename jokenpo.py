@@ -9,4 +9,4 @@ st.text('''ESCOLHA:
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
 j1 = st.text_input('Sua escolha: ')
-st.text('Você escolheu ", j1)
+st.write('Você escolheu ", j1)
